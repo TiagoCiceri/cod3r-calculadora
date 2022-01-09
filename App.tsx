@@ -69,7 +69,7 @@ export default class App extends Component {
 
   render(){
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       
       <Display value={this.state.displayValue} />
 
@@ -94,7 +94,7 @@ export default class App extends Component {
 
       </View>
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   )
   }
 }

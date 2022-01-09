@@ -9,6 +9,7 @@ import {
 const styles = StyleSheet.create({
   display:{
       flex: 1,
+      marginTop:25,
       padding: 20,
       justifyContent: 'center',
       backgroundColor: 'rgba(0,0,0,0.6)',
