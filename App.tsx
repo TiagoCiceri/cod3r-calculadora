@@ -49,7 +49,8 @@ export default class App extends Component {
       const values = [...this.state.values]
 
       try {
-        values[0]= eval(`${values[0]} ${this.state.operation} ${values[1]}`)
+        const calculo = eval(`${values[0]} ${this.state.operation} ${values[1]}`)
+        values[0]= calculo.toFixed(2)
       } catch (e) {
         values[0] = this.state.values[0]
       }
